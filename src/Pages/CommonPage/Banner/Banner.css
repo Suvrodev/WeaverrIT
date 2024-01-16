@@ -1,0 +1,23 @@
+ .star {
+     width: 20px;
+     height: 20px;
+     background-color: #f00;
+     border-radius: 50%;
+     animation: moveStar 2s ease-in-out 0s infinite forwards;
+    }
+
+   
+    @keyframes moveStar {
+        0% {
+            width: 20px;
+            height: 20px;
+        }
+        50% {
+            width: 30px;
+            height: 30px;
+        }
+        100% {
+            width: 20px;
+            height: 20px;
+        }
+      }
