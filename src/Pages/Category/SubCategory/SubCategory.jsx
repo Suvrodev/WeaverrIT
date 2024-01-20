@@ -8,33 +8,36 @@ const SubCategory = ({id}) => {
     useEffect(()=>{
         fetch('subCategory.json')
         .then(res=>res.json())
-        .then(data=>setSubCategory(data))
-    },[])
+        .then(data=>{
+            const x=data.filter(d=> d.categoryid==id)
+            // setSubCategory(data.categoryid)
+            setSubCategory(x)
+        })
+    },[id])
 
-    const [targetSubCategory,setTargetSubcategory]=useState([]);
+    // const [targetSubCategory,setTargetSubcategory]=useState([]);
    
     // const targetSubCategory_help_=subCategory.filter(target=>target.categoryid===id)
     // setTargetSubcategory(targetSubCategory_help_)
 
-    {
-        // id &&
-        useEffect(()=>{
-            const targetSubCategory_help=subCategory.filter(target=>target.categoryid===id)
-            setTargetSubcategory(targetSubCategory_help)
-            console.log("In useEffect");
-         },[id])
-    }
+    // {
+    //     useEffect(()=>{
+    //         const targetSubCategory_help=subCategory.filter(target=>target.categoryid===id)
+    //         setTargetSubcategory(targetSubCategory_help)
+    //         console.log("In useEffect");
+    //      },[id])
+    // }
 
-    console.log("Target subCatgory: ");
-    console.log(targetSubCategory);
+    // console.log("Target subCatgory: ");
+    // console.log(targetSubCategory);
     return (
         <div>
-            Sub Category {targetSubCategory.length}
+            {/* Sub Category {targetSubCategory.length} */}
            {
              subCategory &&
              <div className='grid grid-cols-2 md:grid-cols-4 gap-4'>
                 {
-                    targetSubCategory.map((subCategory,idx)=><SubCategoryCard subCategory={subCategory} key={idx} ></SubCategoryCard>)
+                    subCategory.map((subCategory,idx)=><SubCategoryCard subCategory={subCategory} key={idx} ></SubCategoryCard>)
                 }
               </div>
            }
