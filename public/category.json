@@ -1,0 +1,27 @@
+[
+    {
+        "id": "1",
+        "category":"Graphics & MultipleMedia",
+        "image": "https://www.stylist.co.uk/images/app/uploads/2023/02/14111416/jacuzzi_resturant_interios_nacho_rivera_photographer_london_-1-15-1120x1120.jpg?auto=format%2Ccompress&fit=max&fm=webp&monochrome=38000000&q=75&w=1400"
+    },
+    {
+        "id": "2",
+        "category":"Web & App Development",
+        "image": "https://www.finedininglovers.com/sites/g/files/xknfdk626/files/styles/article_1200_800/public/Original_1922_ice-restaurant.jpg.webp?itok=8e8AJCth"
+    },
+    {
+        "id": "3",
+        "category":"Marketing & Business",
+        "image": "https://s3.amazonaws.com/iexplore_web/images/assets/000/013/597/full/8019199899_b860771886_b.jpg?1465584467"
+    },
+    {
+        "id": "4",
+        "category":"Computer Programming",
+        "image": "https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/10-Romantic-Beach-Restaurants-In-Mumbai-For-A-Dreamy-Dinner-Date-SS020520171.jpg"
+    },
+    {
+        "id": "5",
+        "category":"Basic Computer",
+        "image": "https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/10-Romantic-Beach-Restaurants-In-Mumbai-For-A-Dreamy-Dinner-Date-SS020520171.jpg"
+    }
+]
