@@ -36,6 +36,9 @@ const Category = () => {
     //     slidesToScroll: 3
     //   };
 
+
+    //url https://react-slick.neostack.com/docs/example/responsive
+
     const settings = {
         dots: true,
         infinite: true,
@@ -57,15 +60,16 @@ const Category = () => {
             breakpoint: 600,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 4,
-              initialSlide: 1
+              slidesToScroll: 1,
+              initialSlide: 0
             }
           },
           {
             breakpoint: 480,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 4
+              slidesToScroll: 1,
+              initialSlide: 0
             }
           }
         ]
@@ -76,11 +80,11 @@ const Category = () => {
             <div className='text-center'>
                 <h1 className='text-4xl font-extrabold'>আমাদের কোর্সসমুহ: {categories.length}  </h1>
 
-               <div className='my-4'>
+               <div className='my-4 bg-green-600 rounded-md mx-10 md:mx-0 '>
                 <Slider {...settings}>
                         {
                             categories.map((category,idx)=><div
-                            className='border'
+                            className=' rounded-md w-[450px] p-2 md:p-5 '
                             key={idx}
                             onClick={()=>handleCategory(category.id)}
                             >

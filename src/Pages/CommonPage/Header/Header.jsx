@@ -33,7 +33,7 @@ const Header = () => {
             </ul>
           </div>
           {/* <a className="btn btn-ghost text-xl">Weaverr IT</a> */}
-          <Link to={'/home'}><img className='w-10 md:w-44' src={WeaverLogo} alt="" /></Link>
+          <Link to={'/home'}><img className='w-14 md:w-44' src={WeaverLogo} alt="" /></Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
