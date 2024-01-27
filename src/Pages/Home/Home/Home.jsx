@@ -15,7 +15,7 @@ const Home = () => {
              <FreeTeShikhun></FreeTeShikhun>
              <CareerGoal></CareerGoal>
              <LiveCourse></LiveCourse>
-             <Footer></Footer>
+             {/* <Footer></Footer> */}
         </div>
     );
 };
