@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './Contact.css'
 import logo1 from '../../assets/Logo/Site_Logo.png'
+import mapImage from '../../assets/map.jpg'
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
 
@@ -27,22 +30,38 @@ const Contact = () => {
 
 
   const handleSubmit=()=>{
-
   }
 
+  
+    const handlePhoneCall = () => {
+      window.location.href = 'tel:+8801911473105'; // Replace +1234567890 with the phone number you want to call
+      // console.log("Ok");
+    }
+    const handleEmail=()=>{
+      // window.location.href = 'mailto:weaverrit@gmail.com';
+      const mailtoLink = document.createElement('a');
+      mailtoLink.href = 'mailto:weaverrit@gmail.com'; // Replace weaverrit@gmail.com with the email address you want to send to
+      mailtoLink.click();
+
+    }
+
+   
+  
+
+
     return (
-        <div className='bg-white overflow-auto'>
-            {batteryLevel !== null ? (
+        <div className='bg-white overflow-auto p-5'>
+            {/* {batteryLevel !== null ? (
                 <p>Battery Level: {batteryLevel.toFixed(2)}%</p>
             ) : (
                 <p>Checking battery level...</p>
-            )}
+            )} */}
 
 
             <div className='text-[#4CBD90] text-center font-bold'>
               <img className='w-4/12 mx-auto my-10' src={logo1} alt="" />
-              <h1 className=''>Email: <span>weaverrit@gmail.com</span> </h1>
-              <h1>Phone: <span>01911-473105</span> </h1>
+              <h1 className='cursor-pointer' onClick={()=> window.location = 'mailto:yourmail@domain.com'}>Email: <span>weaverrit@gmail.com</span> </h1>
+              <h1 className='cursor-pointer' onClick={()=>handlePhoneCall()}>Phone: <span>01911-473105</span> </h1>
             </div>
 
         
@@ -57,7 +76,7 @@ const Contact = () => {
                   <input
                     type="email"
                     id="email"
-                    className="form-input mt-1 block w-full p-2 rounded-md"
+                    className="form-input mt-1 block w-full p-2 rounded-md outline-none"
                     placeholder="Your email address"
                     onChange={(e) => setEmail(e.target.value)}
                     required
@@ -68,7 +87,7 @@ const Contact = () => {
                   <input
                     type="text"
                     id="subject"
-                    className="form-input mt-1 block w-full p-2 rounded-md"
+                    className="form-input mt-1 block w-full p-2 rounded-md outline-none"
                     placeholder="Subject"
                     onChange={(e) => setSubject(e.target.value)}
                     required
@@ -78,7 +97,7 @@ const Contact = () => {
                   <label htmlFor="message" className="block text-gray-700 font-bold">Message</label>
                   <textarea
                     id="message"
-                    className="form-textarea mt-1 block w-full p-2 rounded-md resize-none"
+                    className="form-textarea mt-1 block w-full p-2 rounded-md resize-none outline-none"
                     rows="4"
                     placeholder="Your message here"
                     onChange={(e) => setMessage(e.target.value)}
@@ -94,6 +113,19 @@ const Contact = () => {
                   </button>
                 </div>
               </form>
+            </div>
+
+
+            <div className='text-center text-[#4CBD90]'>
+              <h1 className='text-2xl font-bold'>Our Location</h1>
+              <img className='w-10/12 mx-auto my-4' src={mapImage} alt="" />
+            </div>
+
+            <div className='text-[#4CBD90] flex gap-10 w-4/12 mx-auto text-2xl'>
+              <Link to={'https://www.facebook.com/weaverrit'} target='_blank'><FaFacebook/></Link>
+              <Link to={'https://twitter.com/weaverrits?fbclid=IwAR37BnxVEH2K1qSEbaYRAZW3Cl459us7YM7WyzYH4tVXySL6Vn-rKoIqq28'} target='_blank'><FaTwitter/></Link>
+              <Link to={'https://www.instagram.com/weaverrits/?fbclid=IwAR37BnxVEH2K1qSEbaYRAZW3Cl459us7YM7WyzYH4tVXySL6Vn-rKoIqq28'} target='_blank'><FaInstagram/></Link>
+              <Link to={'https://www.linkedin.com/company/weaverrit/'} target='_blank'><FaLinkedin/></Link>
             </div>
         </div>
     );
