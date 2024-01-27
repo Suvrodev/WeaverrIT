@@ -6,9 +6,9 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Main from "../Layout/Main";
-import Home from "../Pages/Home/Home";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Contact from "../Pages/Contact/Contact";
+import Home from "../Pages/Home/Home/Home";
 
 
 
