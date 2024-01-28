@@ -9,6 +9,7 @@ import Main from "../Layout/Main";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Contact from "../Pages/Contact/Contact";
 import Home from "../Pages/Home/Home/Home";
+import About from "../Pages/About/About/About";
 
 
 
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
         {
             path: '/contact',
             element:<Contact></Contact>
+        },
+        {
+          path: '/about',
+          element: <About></About>
         }
     ]
   },

@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router-dom';
 const Header = () => {
 
 
-    const NavItems=<div className='lg:flex items-center justify-center '>
+    const NavItems=<div className='lg:flex items-center justify-center'>
         <li><NavLink className={({isActive})=> isActive? 'text-blue-500 font-extrabold':''}  to='/home'>Home</NavLink ></li>
         <li><NavLink className={({isActive})=> isActive? 'text-blue-500 font-extrabold':''}  to='/menu'>Service</NavLink >
             {/* <ul className="p-2">
@@ -13,13 +13,13 @@ const Header = () => {
               <li><a>Submenu 2</a></li>
             </ul> */}
         </li>
-        <li><NavLink className={({isActive})=> isActive? 'text-blue-500 font-extrabold':''}  to='/order/salad'>About</NavLink ></li>
+        <li><NavLink className={({isActive})=> isActive? 'text-blue-500 font-extrabold':''}  to='/about'>About</NavLink ></li>
         <li><NavLink className={({isActive})=> isActive? 'text-blue-500 font-extrabold':''}  to='/contact'>Contact</NavLink ></li>
    </div>
 
     return (
-        <div className='bg-[#0B1221]'>
-          <div className="navbar bg-[#0B1221] max-w-7xl mx-auto">
+        <div className='bg-[#0B1221]  sticky top-0 z-10 bg-opacity-5 '>
+          <div className="navbar bg-[#0B1221] max-w-7xl mx-auto ">
               <div className="navbar-start  ">
                 <div className="dropdown">
                   <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

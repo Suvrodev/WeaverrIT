@@ -1,0 +1,37 @@
+[
+    {
+        "id": "1",
+        "found":"1101",
+        "Name":"Sarkar Nayan",
+        "position":"CEO & Founder",
+        "image": "https://www.stylist.co.uk/images/app/uploads/2023/02/14111416/jacuzzi_resturant_interios_nacho_rivera_photographer_london_-1-15-1120x1120.jpg?auto=format%2Ccompress&fit=max&fm=webp&monochrome=38000000&q=75&w=1400"
+    },
+    {
+        "id": "2",
+        "found":"1102",
+        "Name":"Suvrodeb Howlader",
+        "position":"Designer and Supporter",
+        "image": "https://www.finedininglovers.com/sites/g/files/xknfdk626/files/styles/article_1200_800/public/Original_1922_ice-restaurant.jpg.webp?itok=8e8AJCth"
+    },
+    {
+        "id": "3",
+        "found":"1103",
+        "Name":"Kanij Fatima Shaila",
+        "position":"Maketers",
+        "image": "https://s3.amazonaws.com/iexplore_web/images/assets/000/013/597/full/8019199899_b860771886_b.jpg?1465584467"
+    },
+    {
+        "id": "4",
+        "found":"1103",
+        "Name":"Maliha Meherin Fariha",
+        "position":"Maketers",
+        "image": "https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/10-Romantic-Beach-Restaurants-In-Mumbai-For-A-Dreamy-Dinner-Date-SS020520171.jpg"
+    },
+    {
+        "id": "5",
+        "found":"1103",
+        "Name":"Shakib Khan",
+        "position":"Maketers",
+        "image": "https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/10-Romantic-Beach-Restaurants-In-Mumbai-For-A-Dreamy-Dinner-Date-SS020520171.jpg"
+    }
+]

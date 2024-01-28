@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Contact.css'
 import logo1 from '../../assets/Logo/Site_Logo.png'
-import mapImage from '../../assets/map.jpg'
+import mapImage from '../../assets/Contact Image/Map.jpg'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
@@ -58,10 +58,10 @@ const Contact = () => {
             )} */}
 
 
-            <div className='text-[#4CBD90] text-center font-bold'>
+            <div className=' text-center font-bold'>
               <img className='w-4/12 mx-auto my-10' src={logo1} alt="" />
-              <h1 className='cursor-pointer' onClick={()=> window.location = 'mailto:yourmail@domain.com'}>Email: <span>weaverrit@gmail.com</span> </h1>
-              <h1 className='cursor-pointer' onClick={()=>handlePhoneCall()}>Phone: <span>01911-473105</span> </h1>
+              <h1 className='cursor-pointer text-black hover:text-[#4CBD90]  duration-500' onClick={()=> window.location = 'mailto:weaverrit@gmail.com'}>Email: <span>weaverrit@gmail.com</span> </h1>
+              <h1 className='cursor-pointer text-black hover:text-[#4CBD90] duration-500' onClick={()=>handlePhoneCall()}>Phone: <span>01911-473105</span> </h1>
             </div>
 
         
@@ -121,7 +121,7 @@ const Contact = () => {
               <img className='w-10/12 mx-auto my-4' src={mapImage} alt="" />
             </div>
 
-            <div className='text-[#4CBD90] flex gap-10 w-4/12 mx-auto text-2xl'>
+            <div className='text-[#4CBD90] flex gap-10 justify-center  md:w-2/12 mx-auto text-2xl text-center '>
               <Link to={'https://www.facebook.com/weaverrit'} target='_blank'><FaFacebook/></Link>
               <Link to={'https://twitter.com/weaverrits?fbclid=IwAR37BnxVEH2K1qSEbaYRAZW3Cl459us7YM7WyzYH4tVXySL6Vn-rKoIqq28'} target='_blank'><FaTwitter/></Link>
               <Link to={'https://www.instagram.com/weaverrits/?fbclid=IwAR37BnxVEH2K1qSEbaYRAZW3Cl459us7YM7WyzYH4tVXySL6Vn-rKoIqq28'} target='_blank'><FaInstagram/></Link>
