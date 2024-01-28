@@ -7,7 +7,6 @@ const Main = () => {
     return (
         <div>
             <Header></Header>
-            {/* This is Main */}
             <div className='max-w-7xl mx-auto'>
                 <Outlet></Outlet>
             </div>

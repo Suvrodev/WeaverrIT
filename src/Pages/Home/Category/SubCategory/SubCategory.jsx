@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import SubCategoryCard from './SubCategoryCard';
 
 const SubCategory = ({id}) => {
-    console.log("Comming ID: ",id);
+    // console.log("Comming ID: ",id);
 
     const [subCategory,setSubCategory]=useState([])
     useEffect(()=>{

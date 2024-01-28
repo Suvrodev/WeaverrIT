@@ -10,6 +10,7 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Contact from "../Pages/Contact/Contact";
 import Home from "../Pages/Home/Home/Home";
 import About from "../Pages/About/About/About";
+import Courses from "../Pages/Courses/Courses";
 
 
 
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
         {
           path: '/about',
           element: <About></About>
+        },
+        {
+          path:'/category/:id',
+          element: <Courses></Courses>
         }
     ]
   },

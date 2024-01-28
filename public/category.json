@@ -2,26 +2,26 @@
     {
         "id": "1",
         "category":"Graphics & MultipleMedia",
-        "image": "https://www.stylist.co.uk/images/app/uploads/2023/02/14111416/jacuzzi_resturant_interios_nacho_rivera_photographer_london_-1-15-1120x1120.jpg?auto=format%2Ccompress&fit=max&fm=webp&monochrome=38000000&q=75&w=1400"
+        "image": "https://i.ibb.co/tKcgkK3/Graphics-And-Multimedia.webp"
     },
     {
         "id": "2",
         "category":"Web & App Development",
-        "image": "https://www.finedininglovers.com/sites/g/files/xknfdk626/files/styles/article_1200_800/public/Original_1922_ice-restaurant.jpg.webp?itok=8e8AJCth"
+        "image": "https://i.ibb.co/0ycPjgb/Web-and-App-Development.webp"
     },
     {
         "id": "3",
         "category":"Marketing & Business",
-        "image": "https://s3.amazonaws.com/iexplore_web/images/assets/000/013/597/full/8019199899_b860771886_b.jpg?1465584467"
+        "image": "https://i.ibb.co/t3HYNZs/Marketing-and-Business.png"
     },
     {
         "id": "4",
         "category":"Computer Programming",
-        "image": "https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/10-Romantic-Beach-Restaurants-In-Mumbai-For-A-Dreamy-Dinner-Date-SS020520171.jpg"
+        "image": "https://i.ibb.co/d0JY6Db/Computer-Programming.png"
     },
     {
         "id": "5",
         "category":"Basic Computer",
-        "image": "https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/10-Romantic-Beach-Restaurants-In-Mumbai-For-A-Dreamy-Dinner-Date-SS020520171.jpg"
+        "image": "https://i.ibb.co/CMjCHWD/Basic-Computer.png"
     }
 ]

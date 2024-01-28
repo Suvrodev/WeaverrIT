@@ -7,25 +7,29 @@ import { Link } from 'react-router-dom';
 
 const Contact = () => {
 
+
+ 
+
+
     const [batteryLevel, setBatteryLevel] = useState(null);
 
-  useEffect(() => {
-    // Check if the Battery Status API is supported
-    if ('getBattery' in navigator) {
-      navigator.getBattery().then((battery) => {
-        // Update the battery level in the state
-        setBatteryLevel(battery.level * 100);
-
-        // Add an event listener to update the battery level when it changes
-        battery.addEventListener('levelchange', () => {
+    useEffect(() => {
+      // Check if the Battery Status API is supported
+      if ('getBattery' in navigator) {
+        navigator.getBattery().then((battery) => {
+          // Update the battery level in the state
           setBatteryLevel(battery.level * 100);
+
+          // Add an event listener to update the battery level when it changes
+          battery.addEventListener('levelchange', () => {
+            setBatteryLevel(battery.level * 100);
+          });
         });
-      });
-    } else {
-      // The Battery Status API is not supported
-      console.error('Battery Status API is not supported in this browser');
-    }
-  }, []);
+      } else {
+        // The Battery Status API is not supported
+        console.error('Battery Status API is not supported in this browser');
+      }
+    }, []);
 
 
 

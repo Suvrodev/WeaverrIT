@@ -1,7 +1,7 @@
 import React from 'react';
 
 const LiveCourseCard = ({liveCourse}) => {
-    console.log(liveCourse);
+    // console.log(liveCourse);
     const {title,desc,image}=liveCourse
     return (
         <div className='border rounded-lg p-5'>

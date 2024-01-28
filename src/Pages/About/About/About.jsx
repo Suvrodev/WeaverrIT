@@ -7,15 +7,17 @@ import Logo from '../../../assets/Logo/Site_Logo.png'
 
 const About = () => {
     return (
-        <div className='my-10'>
+        <div className=''>
             <div className='relative'>
                 <img className='w-[100%] rounded-xl opacity-40' src={MateBanner} alt="" />
                 <img className='absolute top-[20%] right-10 w-[250px]' src={Logo} alt="" />
-                <h1 className=' absolute top-[30%] right-10 text-4xl font-bold text-center my-4  mx-auto rounded-tr-lg rounded-bl-lg p-2'>Meet with Our Teammate</h1>
+                <h1 className=' absolute top-[40%] md:top-[30%] right-10 text-xl md:text-4xl font-bold text-center my-4  mx-auto rounded-tr-lg rounded-bl-lg p-2'>Meet with Our Teammate</h1>
             </div>
-            <CEO></CEO>
-            <Supporter></Supporter>
-            <Marketers></Marketers>
+            <div className='my-10'>
+                <CEO></CEO>
+                <Supporter></Supporter>
+                <Marketers></Marketers>
+            </div>
         </div>
     );
 };
