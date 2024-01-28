@@ -3,102 +3,119 @@
         "id": "1",
         "categoryid":"1",
         "subcategory":"Professional Graphic Design",
+        "categoryName": "Graphics & MultipleMedia",
         "image": "https://www.stylist.co.uk/images/app/uploads/2023/02/14111416/jacuzzi_resturant_interios_nacho_rivera_photographer_london_-1-15-1120x1120.jpg?auto=format%2Ccompress&fit=max&fm=webp&monochrome=38000000&q=75&w=1400"
     },
     {
         "id": "2",
         "categoryid":"1",
         "subcategory":"UX/UI Design",
+        "categoryName": "Graphics & MultipleMedia",
         "image": "https://www.finedininglovers.com/sites/g/files/xknfdk626/files/styles/article_1200_800/public/Original_1922_ice-restaurant.jpg.webp?itok=8e8AJCth"
     },
     {
         "id": "3",
         "categoryid":"1",
         "subcategory":"Motion Graphics",
+        "categoryName": "Graphics & MultipleMedia",
         "image": "https://s3.amazonaws.com/iexplore_web/images/assets/000/013/597/full/8019199899_b860771886_b.jpg?1465584467"
     },
     {
         "id": "4",
         "categoryid":"1",
         "subcategory":"Digital Image Editing",
+        "categoryName": "Graphics & MultipleMedia",
         "image": "https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/10-Romantic-Beach-Restaurants-In-Mumbai-For-A-Dreamy-Dinner-Date-SS020520171.jpg"
     },
     {
         "id": "5",
         "categoryid":"2",
         "subcategory":"WordPress Theme Development",
+        "categoryName": "Web & App Development",
         "image": "https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/10-Romantic-Beach-Restaurants-In-Mumbai-For-A-Dreamy-Dinner-Date-SS020520171.jpg"
     },
     {
         "id": "6",
         "categoryid":"2",
         "subcategory":"Web Development with PHP & Laravel",
+        "categoryName": "Web & App Development",
         "image": "https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/10-Romantic-Beach-Restaurants-In-Mumbai-For-A-Dreamy-Dinner-Date-SS020520171.jpg"
     },
     {
         "id": "7",
         "categoryid":"2",
         "subcategory":"Mastering Vue.js",
+        "categoryName": "Web & App Development",
         "image": "https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/10-Romantic-Beach-Restaurants-In-Mumbai-For-A-Dreamy-Dinner-Date-SS020520171.jpg"
     },
     {
         "id": "8",
         "categoryid":"2",
         "subcategory":"Art of Tailwind CSS",
+        "categoryName": "Web & App Development",
         "image": "https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/10-Romantic-Beach-Restaurants-In-Mumbai-For-A-Dreamy-Dinner-Date-SS020520171.jpg"
     },
     {
         "id": "9",
         "categoryid":"2",
         "subcategory":"App Development with Flutter",
+        "categoryName": "Web & App Development",
         "image": "https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/10-Romantic-Beach-Restaurants-In-Mumbai-For-A-Dreamy-Dinner-Date-SS020520171.jpg"
     },
     {
         "id": "10",
         "categoryid":"3",
         "subcategory":"Full Stack Digital Marketing",
+        "categoryName": "Marketing & Business",
         "image": "https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/10-Romantic-Beach-Restaurants-In-Mumbai-For-A-Dreamy-Dinner-Date-SS020520171.jpg"
     },
     {
         "id": "11",
         "categoryid":"3",
         "subcategory":"SEO",
+        "categoryName": "Marketing & Business",
         "image": "https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/10-Romantic-Beach-Restaurants-In-Mumbai-For-A-Dreamy-Dinner-Date-SS020520171.jpg"
     },
     {
         "id": "12",
         "categoryid":"4",
         "subcategory":"C",
+        "categoryName": "Computer Programming",
         "image": "https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/10-Romantic-Beach-Restaurants-In-Mumbai-For-A-Dreamy-Dinner-Date-SS020520171.jpg"
     },
     {
         "id": "13",
         "categoryid":"4",
         "subcategory":"C++",
+        "categoryName": "Computer Programming",
         "image": "https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/10-Romantic-Beach-Restaurants-In-Mumbai-For-A-Dreamy-Dinner-Date-SS020520171.jpg"
     },
     {
         "id": "14",
         "categoryid":"4",
         "subcategory":"Java",
+        "categoryName": "Computer Programming",
         "image": "https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/10-Romantic-Beach-Restaurants-In-Mumbai-For-A-Dreamy-Dinner-Date-SS020520171.jpg"
     },
     {
         "id": "15",
         "categoryid":"4",
         "subcategory":"Python",
+        "categoryName": "Computer Programming",
         "image": "https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/10-Romantic-Beach-Restaurants-In-Mumbai-For-A-Dreamy-Dinner-Date-SS020520171.jpg"
     },
     {
         "id": "16",
         "categoryid":"5",
         "subcategory":"MS Office",
+        "categoryName": "Basic Computer",
         "image": "https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/10-Romantic-Beach-Restaurants-In-Mumbai-For-A-Dreamy-Dinner-Date-SS020520171.jpg"
     },
     {
         "id": "17",
         "categoryid":"5",
         "subcategory":"Other Software Setting",
+        "categoryName": "Basic Computer",
         "image": "https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/10-Romantic-Beach-Restaurants-In-Mumbai-For-A-Dreamy-Dinner-Date-SS020520171.jpg"
     }
 ]

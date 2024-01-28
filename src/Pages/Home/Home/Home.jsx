@@ -9,7 +9,6 @@ import LiveCourse from '../LiveCourse/LiveCourse';
 const Home = () => {
     return (
         <div>
-            <h1>This is Home</h1> 
              <Banner></Banner>
              <Category></Category>
              <FreeTeShikhun></FreeTeShikhun>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CourseBox = ({c}) => {
-    console.log(c);
+    // console.log(c);
     const {image,subcategory}=c
     return (
         <div className='flex flex-col justify-center gap-5 border items-center p-2 rounded-md'>
