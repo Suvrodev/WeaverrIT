@@ -39,46 +39,81 @@ const Category = () => {
 
     //url https://react-slick.neostack.com/docs/example/responsive
 
+    // const settings = {
+    //     infinite: true,
+    //     speed: 500,
+    //     slidesToShow: 4,
+    //     slidesToScroll: 1,
+    //     initialSlide: 0,
+    //     responsive: [
+    //       {
+    //         breakpoint: 1024,
+    //         settings: {
+    //           slidesToShow: 1,
+    //           slidesToScroll: 1,
+    //           infinite: true,
+    //         }
+    //       },
+    //       {
+    //         breakpoint: 600,
+    //         settings: {
+    //           slidesToShow: 1,
+    //           slidesToScroll: 1,
+    //           initialSlide: 0
+    //         }
+    //       },
+    //       {
+    //         breakpoint: 480,
+    //         settings: {
+    //           slidesToShow: 1,
+    //           slidesToScroll: 1,
+    //           initialSlide: 2,
+    //           infinite: true,
+    //         }
+    //       }
+    //     ]
+    //   };
     const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        initialSlide: 0,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              initialSlide: 0
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              initialSlide: 0
-            }
+      infinite: true,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      initialSlide: 0,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            initialSlide: 0 // Set initial slide to 0 for desktop view
           }
-        ]
-      };
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            initialSlide: 0 // Set initial slide to 0 for medium-sized devices
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            initialSlide: 0, // Set initial slide to 0 for mobile devices
+            infinite: true,
+          }
+        }
+      ]
+    };
+    
 
     return (
        <div className='p-5'>
             <div className='text-center'>
-                <h1 className='text-4xl font-extrabold'>আমাদের কোর্সসমুহ: {categories.length}  </h1>
+                <h1 className='text-4xl font-extrabold my-5'>আমাদের কোর্সসমুহ  </h1>
 
                <div className='my-4 bg-green-600 rounded-md mx-10 md:mx-0 '>
                 <Slider {...settings}>

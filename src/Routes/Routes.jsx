@@ -11,6 +11,9 @@ import Contact from "../Pages/Contact/Contact";
 import Home from "../Pages/Home/Home/Home";
 import About from "../Pages/About/About/About";
 import Courses from "../Pages/Courses/Courses";
+import Test from "../Pages/Test/Test";
+import MySwipper from "../Pages/Test/MySwipper";
+import Service from "../Pages/Service/Service";
 
 
 
@@ -39,6 +42,18 @@ const router = createBrowserRouter([
         {
           path:'/category/:id',
           element: <Courses></Courses>
+        },
+        {
+          path: '/service',
+          element: <Service></Service>
+        },
+        {
+          path: '/test',
+          element: <Test></Test>
+        },
+        {
+          path: '/ms',
+          element: <MySwipper></MySwipper>
         }
     ]
   },

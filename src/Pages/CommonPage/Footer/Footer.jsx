@@ -3,8 +3,8 @@ import Logo from '../../../assets/Logo/Site_Logo.png'
 
 const Footer = () => {
     return (
-       <div className='bg-[#1c4274] mt-10'>
-            <footer className="footer p-10  rounded-md grid grid-cols-1 md:grid-cols-4 max-w-7xl mx-auto">
+       <div className='bg-[var(--footer-color)] mt-10'>
+            <footer className="footer p-10  rounded-md grid grid-cols-1 md:grid-cols-4 justify-evenly max-w-7xl mx-auto">
             <aside>
               <img className='w-[146px]' src={Logo} alt="" />
                     <p>অনলাইন লাইভ স্কিল ডেভেলপমেন্ট প্ল্যাটফর্ম।</p>

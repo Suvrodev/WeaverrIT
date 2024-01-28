@@ -1,0 +1,25 @@
+.swiper-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  
+  .swiper-content {
+    display: flex;
+    transition: transform 0.5s ease; /* Add smooth transition */
+  }
+  
+  .swiper-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  .swiper-content span {
+    margin: 0 5px;
+  }
+  
