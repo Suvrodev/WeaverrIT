@@ -8,11 +8,11 @@ const Courses = () => {
     const {id}=useParams()
     const { state } = useLocation()
     const allCourses=state.data;
-    console.log("All Courses: ",allCourses);
+    // console.log("All Courses: ",allCourses);
     // console.log("Came ID: ",id);
 
     let courses=allCourses.filter(all=>all.categoryid==id)
-    console.log("This Courses: ",courses);
+    // console.log("This Courses: ",courses);
 
     // axios.get('category.json')
     // .then(res=>console.log(res.data))
