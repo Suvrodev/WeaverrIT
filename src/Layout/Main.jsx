@@ -3,6 +3,8 @@ import { Outlet } from 'react-router-dom';
 import Header from '../Pages/CommonPage/Header/Header';
 import Footer from '../Pages/CommonPage/Footer/Footer';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
+import ScrollToTop from 'react-scroll-to-top';
+import ScrollTop from './Refer/ScrollTop/ScrollTop';
 
 
 const Main = () => {
@@ -13,6 +15,7 @@ const Main = () => {
                 <Outlet></Outlet>
             </div>
             <Footer></Footer>
+            <ScrollTop></ScrollTop>
 
 
             {/* Messenger Start */}

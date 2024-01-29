@@ -1,9 +1,11 @@
 import React from 'react';
 import Logo from '../../../assets/Logo/Site_Logo.png'
+import ScrollToTop from 'react-scroll-to-top';
 
 const Footer = () => {
     return (
        <div className='bg-[var(--footer-color)] mt-10'>
+        
             <footer className="footer p-10  rounded-md grid grid-cols-1 md:grid-cols-4 justify-evenly max-w-7xl mx-auto">
             <aside>
               <img className='w-[146px]' src={Logo} alt="" />
@@ -36,7 +38,10 @@ const Footer = () => {
               <a className="link link-hover">Privacy policy</a>
               <a className="link link-hover">Cookie policy</a>
             </nav>
+
           </footer>
+
+         
        </div>
     );
 };

@@ -4,6 +4,7 @@ import logo1 from '../../assets/Logo/Site_Logo.png'
 import mapImage from '../../assets/Contact Image/Map.jpg'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const Contact = () => {
 
@@ -55,6 +56,10 @@ const Contact = () => {
 
     return (
         <div className='bg-white overflow-auto p-5'>
+           <Helmet>
+                <title>Contact | WeaverrIT</title>
+            </Helmet>
+
             {/* {batteryLevel !== null ? (
                 <p>Battery Level: {batteryLevel.toFixed(2)}%</p>
             ) : (

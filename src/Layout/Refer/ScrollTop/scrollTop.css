@@ -1,0 +1,13 @@
+.sct{
+    background-color: #E7A500;
+    color: white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: larger;
+    font-weight: 700 !important ;
+
+}
