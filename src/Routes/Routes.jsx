@@ -14,6 +14,7 @@ import Courses from "../Pages/Courses/Courses";
 import Test from "../Pages/Test/Test";
 import MySwipper from "../Pages/Test/MySwipper";
 import Service from "../Pages/Service/Service";
+import CourseDetails from "../Pages/CourseDetails/CourseDetails";
 
 
 
@@ -40,12 +41,16 @@ const router = createBrowserRouter([
           element: <About></About>
         },
         {
+          path: '/service',
+          element: <Service></Service>
+        },
+        {
           path:'/category/:id',
           element: <Courses></Courses>
         },
         {
-          path: '/service',
-          element: <Service></Service>
+          path: '/coursedetails/:id',
+          element:<CourseDetails></CourseDetails>
         },
         {
           path: '/test',

@@ -19,11 +19,11 @@ const Main = () => {
 
 
             {/* Messenger Start */}
-            <MessengerCustomerChat
+            {/* <MessengerCustomerChat
                 pageId="<PAGE_ID>"
                 appId="<APP_ID>"
                 htmlRef="<REF_STRING>"
-            />
+            /> */}
             {/* Messenger End */}
             
         </div>
