@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useParams } from 'react-router-dom';
+import OnMount from '../../Layout/Refer/OnMount/OnMount';
 
 const CourseDetails = () => {
     const {id}=useParams()
@@ -15,7 +17,7 @@ const CourseDetails = () => {
         })
     },[])
     // console.log(course);
-    const {desc,image,provide,online,offline}=course
+    const {desc,image,provide,online,offline,categoryName}=course
 
     let provides;
     if(provide){
@@ -24,6 +26,11 @@ const CourseDetails = () => {
     // console.log(provides);
     return (
         <div>
+            <Helmet>
+                 <title> {categoryName?categoryName:"Details"} | WeaverrIT</title>
+            </Helmet>
+            <OnMount></OnMount>
+
           <div className='flex flex-col md:flex-row gap-10 items-center'>
              <div className='w-full md:w-[50%] flex flex-col justify-center items-center'>
                  <h1 className='my-5 text-2xl font-bold text-yellow-500'>কোর্স সম্পর্কে</h1>

@@ -6,7 +6,7 @@ import { Typewriter } from 'react-simple-typewriter';
 
 const Banner = () => {
     return (
-        <div className='w-full md:h-[400px] md:w-[100%] bg-[var(--banner-color)] flex flex-col md:flex-row rounded-lg'>
+        <div className='w-full md:h-[400px] md:w-[100%] bg-[var(--banner-color)] flex flex-col items-center md:flex-row rounded-lg'>
             <div className='w-full md:w-[50%] h-[350px] flex items-center justify-center flex-col gap-5 p-5'>
                 {/* <h1>Online Based IT Firm</h1> */}
                 <h1 className='text-3xl font-bold'>ক্যারিয়ার শুরু হোক <br />দক্ষতার <span className='text-yellow-300'> আত্মবিশ্বাসে</span> </h1>

@@ -2,6 +2,8 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 import CourseBox from './CourseBox';
+import { Helmet } from 'react-helmet-async';
+import OnMount from '../../Layout/Refer/OnMount/OnMount';
 
 const Courses = () => {
     // const [allCourses,setAllCourses]=useState([])
@@ -18,6 +20,7 @@ const Courses = () => {
     // .then(res=>console.log(res.data))
 
     // console.log(courses);
+   
 
    
 
@@ -30,6 +33,11 @@ const Courses = () => {
 
     return (
         <div>
+             <Helmet>
+                 <title>{courses[0].categoryName} | WeaverrIT</title>
+            </Helmet>
+            <OnMount></OnMount>
+
             <h1 className='text-center text-2xl font-bold my-10 bg-orange-500 p-2 w-10/12 md:w-6/12 rounded-md mx-auto'>{courses[0].categoryName}</h1>
             <div className='grid grid-cols-1 md:grid-cols-3 p-5 gap-10 '>
                 {

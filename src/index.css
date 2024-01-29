@@ -17,9 +17,10 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* Color Variable start*/
-  --logo-color: blue;
+  --logo-color: #4CBD90;
   --footer-color:#1C4274;
   --banner-color:#51B8E5
+
   /* Color Variable end*/ 
 }
 /*

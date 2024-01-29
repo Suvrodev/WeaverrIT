@@ -7,10 +7,12 @@ import FreeTeShikhun from '../FreeTeShikhun/FreeTeShikhun';
 import LiveCourse from '../LiveCourse/LiveCourse';
 import { Helmet } from 'react-helmet-async';
 import OnMount from '../../../Layout/Refer/OnMount/OnMount';
+import FAQ from '../FAQ/FAQ';
 
 const Home = () => {
     return (
         <div>
+            
             <Helmet>
                 <title>Home | WeaverrIT</title>
             </Helmet>
@@ -20,6 +22,7 @@ const Home = () => {
              <FreeTeShikhun></FreeTeShikhun>
              <CareerGoal></CareerGoal>
              <LiveCourse></LiveCourse>
+             <FAQ></FAQ>
              {/* <Footer></Footer> */}
         </div>
     );
