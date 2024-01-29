@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
 import SubCategory from '../SubCategory/SubCategory';
+import { Helmet } from 'react-helmet-async';
 
 
 
@@ -112,6 +113,8 @@ const Category = () => {
 
     return (
        <div className='p-5'>
+            
+
             <div className='text-center'>
                 <h1 className='text-4xl font-extrabold my-5'>আমাদের কোর্সসমুহ  </h1>
 

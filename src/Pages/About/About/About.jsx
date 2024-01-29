@@ -5,6 +5,7 @@ import Marketers from '../Marketers/Marketers';
 import MateBanner from '../../../assets/Banner/MateBanner.avif'
 import Logo from '../../../assets/Logo/Site_Logo.png'
 import { Helmet } from 'react-helmet-async';
+import OnMount from '../../../Layout/Refer/OnMount/OnMount';
 
 const About = () => {
     return (
@@ -12,6 +13,7 @@ const About = () => {
              <Helmet>
                 <title>About | WeaverrIT</title>
             </Helmet>
+            <OnMount></OnMount>
 
             <div className='relative'>
                 <img className='w-[100%] rounded-xl opacity-40' src={MateBanner} alt="" />

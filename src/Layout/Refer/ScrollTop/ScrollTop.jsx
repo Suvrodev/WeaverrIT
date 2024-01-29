@@ -1,4 +1,3 @@
-import React from 'react';
 import './scrollTop.css'
 
 import ScrollToTop from 'react-scroll-to-top';

@@ -6,6 +6,7 @@ import CareerGoal from '../CareerGoal/CareerGoal';
 import FreeTeShikhun from '../FreeTeShikhun/FreeTeShikhun';
 import LiveCourse from '../LiveCourse/LiveCourse';
 import { Helmet } from 'react-helmet-async';
+import OnMount from '../../../Layout/Refer/OnMount/OnMount';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <Helmet>
                 <title>Home | WeaverrIT</title>
             </Helmet>
+            <OnMount></OnMount>
              <Banner></Banner>
              <Category></Category>
              <FreeTeShikhun></FreeTeShikhun>

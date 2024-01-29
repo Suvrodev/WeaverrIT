@@ -5,6 +5,7 @@ import mapImage from '../../assets/Contact Image/Map.jpg'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import OnMount from '../../Layout/Refer/OnMount/OnMount';
 
 const Contact = () => {
 
@@ -59,6 +60,7 @@ const Contact = () => {
            <Helmet>
                 <title>Contact | WeaverrIT</title>
             </Helmet>
+            <OnMount></OnMount>
 
             {/* {batteryLevel !== null ? (
                 <p>Battery Level: {batteryLevel.toFixed(2)}%</p>
