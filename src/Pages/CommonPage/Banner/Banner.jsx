@@ -16,7 +16,7 @@ const Banner = () => {
                 {/* Style will be inherited from the parent element */}
                 <Typewriter
                     words={['প্রস্তুতি নিন', 'দেরী না করে এখনি শুরু করুন', 'সময় অপেক্ষা করবে না']}
-                    loop={5}
+                    loop={100}
                     cursor
                     cursorStyle='...'
                     typeSpeed={70}

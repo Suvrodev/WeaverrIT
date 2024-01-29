@@ -1,0 +1,27 @@
+.totalBattery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+   
+} 
+ .matha{
+    width: 8px;
+    height: 10px;
+    background-color: red;
+    border-radius: 5px;
+}
+.batterybody{
+    width: 25px;
+    height: 15px;
+    background-color: skyblue;
+    position: relative;
+    border-radius: 2px;
+} 
+.charge{
+    position: absolute;
+    width: 10px;
+    height: 15px;
+    background-color: green;
+    right: 0;
+}

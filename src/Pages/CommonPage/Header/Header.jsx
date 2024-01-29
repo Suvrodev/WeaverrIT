@@ -1,6 +1,7 @@
 import React from 'react';
 import WeaverLogo from '../../../assets/Logo/Site_Logo.png'
 import { Link, NavLink } from 'react-router-dom';
+import BatteryLevel from '../../../Layout/Refer/BatteryLevel/BatteryLevel';
 
 const Header = () => {
 
@@ -15,6 +16,7 @@ const Header = () => {
         </li>
         <li><NavLink className={({isActive})=> isActive? 'text-blue-500 font-extrabold':''}  to='/about'>About</NavLink ></li>
         <li><NavLink className={({isActive})=> isActive? 'text-blue-500 font-extrabold':''}  to='/contact'>Contact</NavLink ></li>
+       
    </div>
 
     return (
@@ -35,6 +37,7 @@ const Header = () => {
                 </div>
                 {/* <a className="btn btn-ghost text-xl">Weaverr IT</a> */}
                 <Link to={'/home'}><img className='w-20 md:w-44' src={WeaverLogo} alt="" /></Link>
+                <BatteryLevel></BatteryLevel>
               </div>
               <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

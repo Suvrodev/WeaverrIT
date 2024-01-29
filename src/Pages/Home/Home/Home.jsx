@@ -20,13 +20,16 @@ const Home = () => {
             <OnMount></OnMount>
              <Banner></Banner>
              <Category></Category>
+            
+             <FacebookMsg></FacebookMsg>
+
              <FreeTeShikhun></FreeTeShikhun>
              <CareerGoal></CareerGoal>
              <LiveCourse></LiveCourse>
              <FAQ></FAQ>
              {/* <Footer></Footer> */}
 
-             <FacebookMsg></FacebookMsg>
+           
         </div>
     );
 };

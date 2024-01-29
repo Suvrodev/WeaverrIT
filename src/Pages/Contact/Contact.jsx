@@ -6,6 +6,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import OnMount from '../../Layout/Refer/OnMount/OnMount';
+import BatteryLevel from '../../Layout/Refer/BatteryLevel/BatteryLevel';
 
 const Contact = () => {
 
@@ -13,25 +14,7 @@ const Contact = () => {
  
 
 
-    const [batteryLevel, setBatteryLevel] = useState(null);
-
-    useEffect(() => {
-      // Check if the Battery Status API is supported
-      if ('getBattery' in navigator) {
-        navigator.getBattery().then((battery) => {
-          // Update the battery level in the state
-          setBatteryLevel(battery.level * 100);
-
-          // Add an event listener to update the battery level when it changes
-          battery.addEventListener('levelchange', () => {
-            setBatteryLevel(battery.level * 100);
-          });
-        });
-      } else {
-        // The Battery Status API is not supported
-        console.error('Battery Status API is not supported in this browser');
-      }
-    }, []);
+   
 
 
 
@@ -62,11 +45,7 @@ const Contact = () => {
             </Helmet>
             <OnMount></OnMount>
 
-            {/* {batteryLevel !== null ? (
-                <p>Battery Level: {batteryLevel.toFixed(2)}%</p>
-            ) : (
-                <p>Checking battery level...</p>
-            )} */}
+            {/* <BatteryLevel></BatteryLevel> */}
 
 
             <div className=' text-center font-bold'>
