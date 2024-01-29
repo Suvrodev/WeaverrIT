@@ -5,6 +5,7 @@ import Footer from '../Pages/CommonPage/Footer/Footer';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 import ScrollToTop from 'react-scroll-to-top';
 import ScrollTop from './Refer/ScrollTop/ScrollTop';
+import { CustomChat, FacebookProvider } from 'react-facebook';
 
 
 const Main = () => {
@@ -20,11 +21,13 @@ const Main = () => {
 
             {/* Messenger Start */}
             {/* <MessengerCustomerChat
-                pageId="<PAGE_ID>"
+                pageId="105831338849112"
                 appId="<APP_ID>"
                 htmlRef="<REF_STRING>"
             /> */}
             {/* Messenger End */}
+
+          
             
         </div>
     );

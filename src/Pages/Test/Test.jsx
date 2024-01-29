@@ -67,7 +67,7 @@ const Test = () => {
                     },
                   }}
                 modules={[Navigation]}
-                className="mySwiper p-40 w-10/12 md:w-full pd bg-red-500"
+                className="mySwiper p-40 w-10/12 md:w-full pd "
               >
                 {/* <SwiperSlide>Slide 1</SwiperSlide>
                 <SwiperSlide>Slide 2</SwiperSlide>

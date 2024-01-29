@@ -15,7 +15,7 @@ const FAQ = () => {
         <div className='mt-20' data-aos="zoom-in-right">
         <h1 className='text-center text-4xl w-11/12 md:w-1/2 rounded-xl text-white bg-yellow-500 mx-auto p-4'>সাধারন প্রশ্ন ও উত্তর</h1>
 
-        <div className='flex flex-col md:flex-row items-center '>
+        <div className='flex flex-col md:flex-row items-center bg-black '>
             <div className='clientQsn w-full md:w-1/2 p-2 md:m-10'>
 
                 <div tabIndex={0} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">

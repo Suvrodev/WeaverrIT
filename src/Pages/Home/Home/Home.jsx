@@ -8,6 +8,7 @@ import LiveCourse from '../LiveCourse/LiveCourse';
 import { Helmet } from 'react-helmet-async';
 import OnMount from '../../../Layout/Refer/OnMount/OnMount';
 import FAQ from '../FAQ/FAQ';
+import FacebookMsg from '../../../Layout/Refer/FacebookMsg/FacebookMsg';
 
 const Home = () => {
     return (
@@ -24,6 +25,8 @@ const Home = () => {
              <LiveCourse></LiveCourse>
              <FAQ></FAQ>
              {/* <Footer></Footer> */}
+
+             <FacebookMsg></FacebookMsg>
         </div>
     );
 };
