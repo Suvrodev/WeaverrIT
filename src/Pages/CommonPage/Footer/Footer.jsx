@@ -1,10 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Logo from '../../../assets/Logo/Site_Logo.png'
 import ScrollToTop from 'react-scroll-to-top';
+import ReactModal from 'react-modal';
+import DeveloperModal from '../../../Layout/Refer/DeveloperModal/DeveloperModal';
+
+
+
 
 const Footer = () => {
+
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
+
+    const handleModal=()=>{
+       console.log("Ok");
+    }
+
     return (
-       <div className='bg-[var(--footer-color)] mt-10'>
+       <div className='bg-[var(--footer-color)] mt-10 flex flex-col items-center'>
         
             <footer className="footer p-10  rounded-md grid grid-cols-1 md:grid-cols-4 justify-evenly max-w-7xl mx-auto">
             <aside>
@@ -40,6 +61,20 @@ const Footer = () => {
             </nav>
 
           </footer>
+        
+
+        {/* Open the modal using document.getElementById('ID').showModal() method */}
+        <h1 className="text-xl font-bold" onClick={()=>document.getElementById('my_modal_1').showModal()}>Contact With Developer</h1>
+        <dialog id="my_modal_1" className="modal">
+          <div className="modal-box">
+            <DeveloperModal></DeveloperModal>
+            <div className="modal-action">
+              <form method="dialog">
+                <button className="btn">Close</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
 
          
        </div>
