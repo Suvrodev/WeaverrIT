@@ -32,6 +32,9 @@ const Banner = () => {
             <div className='w-full md:w-[50%] flex items-center justify-center p-5'>
                 <img src={imageOfBanner} alt="" />
             </div>
+
+
+            
         </div>
     );
 };

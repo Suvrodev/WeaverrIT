@@ -15,6 +15,9 @@ import Test from "../Pages/Test/Test";
 import MySwipper from "../Pages/Test/MySwipper";
 import Service from "../Pages/Service/Service";
 import CourseDetails from "../Pages/CourseDetails/CourseDetails";
+import Login from "../Pages/UserResponsibility/Login/Login";
+import Registration from "../Pages/UserResponsibility/Registration/Registration";
+import TermAndCondition from "../Pages/UserResponsibility/TermsAndCondition/TermAndCondition";
 
 
 
@@ -51,6 +54,18 @@ const router = createBrowserRouter([
         {
           path: '/coursedetails/:id',
           element:<CourseDetails></CourseDetails>
+        },
+        {
+          path: '/login',
+          element: <Login></Login>
+        },
+        {
+          path: '/registration',
+          element: <Registration></Registration>
+        },
+        {
+          path: '/condition',
+          element: <TermAndCondition></TermAndCondition>
         },
         {
           path: '/test',

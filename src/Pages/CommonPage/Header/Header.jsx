@@ -16,6 +16,7 @@ const Header = () => {
         </li>
         <li><NavLink className={({isActive})=> isActive? 'text-blue-500 font-extrabold':''}  to='/about'>About</NavLink ></li>
         <li><NavLink className={({isActive})=> isActive? 'text-blue-500 font-extrabold':''}  to='/contact'>Contact</NavLink ></li>
+        <div className=' md:hidden'><BatteryLevel></BatteryLevel></div>
        
    </div>
 
@@ -37,7 +38,7 @@ const Header = () => {
                 </div>
                 {/* <a className="btn btn-ghost text-xl">Weaverr IT</a> */}
                 <Link to={'/home'}><img className='w-20 md:w-44' src={WeaverLogo} alt="" /></Link>
-                <BatteryLevel></BatteryLevel>
+                <div className='hidden md:block'><BatteryLevel></BatteryLevel></div>
               </div>
               <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -46,7 +47,7 @@ const Header = () => {
                 </ul>
               </div>
               <div className="navbar-end">
-                <a className="btn">Login</a>
+                <Link to='/login' className="btn">Login</Link>
               </div>
             </div>
         </div>

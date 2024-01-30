@@ -6,6 +6,7 @@ import MessengerCustomerChat from 'react-messenger-customer-chat';
 import ScrollToTop from 'react-scroll-to-top';
 import ScrollTop from './Refer/ScrollTop/ScrollTop';
 import { CustomChat, FacebookProvider } from 'react-facebook';
+import FacebookMsg from './Refer/FacebookMsg/FacebookMsg';
 
 
 const Main = () => {
@@ -17,6 +18,7 @@ const Main = () => {
             </div>
             <Footer></Footer>
             <ScrollTop></ScrollTop>
+            <FacebookMsg></FacebookMsg>
 
 
             {/* Messenger Start */}

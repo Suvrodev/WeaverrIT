@@ -18,17 +18,15 @@ const Home = () => {
                 <title>Home | WeaverrIT</title>
             </Helmet>
             <OnMount></OnMount>
+        
              <Banner></Banner>
              <Category></Category>
-            
-             <FacebookMsg></FacebookMsg>
-
              <FreeTeShikhun></FreeTeShikhun>
              <CareerGoal></CareerGoal>
              <LiveCourse></LiveCourse>
              <FAQ></FAQ>
              {/* <Footer></Footer> */}
-
+            
            
         </div>
     );
