@@ -3,6 +3,8 @@ import RegAnim from '../../../../public/Reg_Lottie.json'
 
 import { useLottie } from 'lottie-react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
+import OnMount from '../../../Layout/Refer/OnMount/OnMount';
 
 
 const Registration = () => {
@@ -37,6 +39,12 @@ const Registration = () => {
 
     return (
         <div className="flex flex-col-reverse md:flex-row ">
+
+            <Helmet>
+                <title>Home | WeaverrIT</title>
+            </Helmet>
+            <OnMount></OnMount>
+
           <div className="w-full md:w-[50%]   flex items-center justify-center ">
             <div className="card-body  flex flex-col justify-center  ">
             <h1 className="text-3xl font-bold text-center">Registration now!</h1>

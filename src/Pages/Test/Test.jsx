@@ -49,42 +49,38 @@ const Test = () => {
 
     return (
         <div className='bg-white text-black'>
-             <Swiper
-                rewind={true}
-                navigation={true}
-                breakpoints={{
-                    640: {
-                      slidesPerView: 2,
-                      spaceBetween: 20,
-                    },
-                    768: {
-                      slidesPerView: 4,
-                      spaceBetween: 40,
-                    },
-                    1024: {
-                      slidesPerView: 4,
-                      spaceBetween: 50,
-                    },
-                  }}
-                modules={[Navigation]}
-                className="mySwiper p-40 w-10/12 md:w-full pd "
-              >
-                {/* <SwiperSlide>Slide 1</SwiperSlide>
-                <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide>
-                <SwiperSlide>Slide 5</SwiperSlide>
-                <SwiperSlide>Slide 6</SwiperSlide> */}
-                 {
-                            categories.map((category,idx)=><div
-                            key={idx}
-                            onClick={()=>handleCategory(category.id)}
-                            className='m-10 pd'
-                            >
-                              <SwiperSlide className='bg-green-600 mx-0 md:mx-20 my-2 rounded-md text-white font-bold text-center '>  {category.category} </SwiperSlide>
-                            </div>)
-                        }    
-            </Swiper>
+            <div className='md:hidden '>
+              <Swiper
+                  rewind={false}
+                  navigation={true}
+                  breakpoints={{
+                      480: {
+                        slidesPerView: 1,
+                        spaceBetween: 50,
+                      },
+                      768: {
+                        slidesPerView: 4,
+                        spaceBetween: 40,
+                      },
+                      1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 50,
+                      },
+                    }}
+                  modules={[Navigation]}
+                  className="mySwiper  w-10/12 md:w-full bg-red-500  "
+                >
+                  {
+                              categories.map((category,idx)=><div
+                              key={idx}
+                              onClick={()=>handleCategory(category.id)}
+                              className='m-10 pd'
+                              >
+                                <SwiperSlide className='bg-green-600 mx-0 md:mx-20 my-2 rounded-md text-white font-bold text-center '>  {category.category} </SwiperSlide>
+                              </div>)
+                          }    
+              </Swiper>
+            </div>
 
             <div className='bg-blue-300 my-10 h-16 flex gap-5 items-center justify-center sticky top-100 '>
               <button onClick={scroll1} className='btn btn-primary'>Button-1</button>

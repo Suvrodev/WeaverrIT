@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import LoginAnim from '../../../../public/Login_Lottie.json'
 import { useLottie } from 'lottie-react';
+import { Helmet } from 'react-helmet-async';
+import OnMount from '../../../Layout/Refer/OnMount/OnMount';
 
 const Login = () => {
 
@@ -33,6 +35,11 @@ const Login = () => {
 
     return (
         <div className="flex flex-col md:flex-row ">
+             <Helmet>
+                <title>Home | WeaverrIT</title>
+            </Helmet>
+            <OnMount></OnMount>
+
           <div className="w-full md:w-[50%]   flex items-center justify-center ">
             <div className="card-body  flex flex-col justify-center  ">
             <h1 className="text-3xl font-bold text-center">Login now!</h1>

@@ -7,6 +7,18 @@ import SubCategory from '../SubCategory/SubCategory';
 import { Helmet } from 'react-helmet-async';
 
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
+
+import 'swiper/css/navigation';
+
+
 
 const Category = () => {
 
@@ -29,51 +41,6 @@ const Category = () => {
     }
 
 
-    // const settings = {
-    //     dots: true,
-    //     infinite: true,
-    //     speed: 500,
-    //     slidesToShow: 4,
-    //     slidesToScroll: 3
-    //   };
-
-
-    //url https://react-slick.neostack.com/docs/example/responsive
-
-    // const settings = {
-    //     infinite: true,
-    //     speed: 500,
-    //     slidesToShow: 4,
-    //     slidesToScroll: 1,
-    //     initialSlide: 0,
-    //     responsive: [
-    //       {
-    //         breakpoint: 1024,
-    //         settings: {
-    //           slidesToShow: 1,
-    //           slidesToScroll: 1,
-    //           infinite: true,
-    //         }
-    //       },
-    //       {
-    //         breakpoint: 600,
-    //         settings: {
-    //           slidesToShow: 1,
-    //           slidesToScroll: 1,
-    //           initialSlide: 0
-    //         }
-    //       },
-    //       {
-    //         breakpoint: 480,
-    //         settings: {
-    //           slidesToShow: 1,
-    //           slidesToScroll: 1,
-    //           initialSlide: 2,
-    //           infinite: true,
-    //         }
-    //       }
-    //     ]
-    //   };
     const settings = {
       infinite: true,
       speed: 500,
@@ -118,7 +85,8 @@ const Category = () => {
             <div className='text-center'>
                 <h1 className='text-4xl font-extrabold my-5'>আমাদের কোর্সসমুহ  </h1>
 
-               <div className='my-4 bg-green-600 rounded-md mx-10 md:mx-0 '>
+              {/* Computer View Start */}
+               <div className='my-4 bg-green-600 rounded-md mx-10 md:mx-0 hidden md:block'>
                 <Slider {...settings}>
                         {
                             categories.map((category,idx)=><div
@@ -131,6 +99,45 @@ const Category = () => {
                         }    
                     </Slider>
                </div>
+                {/* Computer View End */}
+
+
+                {/* Mobile View Start */}
+                <div className='md:hidden my-5'>
+                <Swiper
+                  rewind={true}
+                  navigation={true}
+                  breakpoints={{
+                      480: {
+                        slidesPerView: 1,
+                        spaceBetween: 50,
+                      },
+                      768: {
+                        slidesPerView: 4,
+                        spaceBetween: 40,
+                      },
+                      1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 50,
+                      },
+                    }}
+                  modules={[Navigation]}
+                  className="mySwiper  w-10/12 mx-20"
+                >
+                  {
+                              categories.map((category,idx)=><div
+                              key={idx}
+                              onClick={()=>handleCategory(category.id)}
+                              className='m-10 pd'
+                              >
+                                <SwiperSlide className='w-6/12 mx-auto my-2 rounded-md text-white font-bold text-center '
+                                 onClick={()=>handleCategory(category.id)}
+                                >  {category.category} </SwiperSlide>
+                              </div>)
+                          }    
+              </Swiper>
+                  </div>
+                {/* Mobile View end */}
 
                <SubCategory id={id}></SubCategory>
             </div>
