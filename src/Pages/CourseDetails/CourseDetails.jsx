@@ -34,7 +34,7 @@ const CourseDetails = () => {
           <div className='flex flex-col md:flex-row gap-10 items-center'>
              <div className='w-full md:w-[50%] flex flex-col justify-center items-center'>
                  <h1 className='my-5 text-2xl font-bold text-yellow-500'>কোর্স সম্পর্কে</h1>
-                 <h1 className=''>{desc?desc:<p className='text-2xl font-bold' key={1122}>UpComming</p>}</h1>
+                 <h1 className='p-5'>{desc?desc:<p className='text-2xl font-bold' key={1122}>UpComming</p>}</h1>
              </div>
              <div className='w-full md:w-[50%] p-5'>
                   <img className='w-[450px] h-[300px] rounded-xl' src={image} alt="" />
