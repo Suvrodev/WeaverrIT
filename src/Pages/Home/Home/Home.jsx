@@ -9,6 +9,7 @@ import { Helmet } from 'react-helmet-async';
 import OnMount from '../../../Layout/Refer/OnMount/OnMount';
 import FAQ from '../FAQ/FAQ';
 import FacebookMsg from '../../../Layout/Refer/FacebookMsg/FacebookMsg';
+import WeaverrBusiness from '../WeaverrBusiness/WeaverrBusiness';
 
 const Home = () => {
     return (
@@ -24,6 +25,7 @@ const Home = () => {
              <FreeTeShikhun></FreeTeShikhun>
              <CareerGoal></CareerGoal>
              <LiveCourse></LiveCourse>
+             <WeaverrBusiness></WeaverrBusiness>
              <FAQ></FAQ>
              {/* <Footer></Footer> */}
             

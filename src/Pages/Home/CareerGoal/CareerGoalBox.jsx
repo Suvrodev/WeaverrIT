@@ -14,7 +14,7 @@ const CareerGoalBox = ({c}) => {
     },[])
     
     return (
-        <div className='bg-[#FFF1E9] flex flex-col items-center justify-center gap-5 p-5 rounded-md'>
+        <div className='bg-[#FFF1E9] flex flex-col items-center justify-center gap-5 p-5 rounded-md m-5 md:m-0'>
              <div className='w-[75px] h-[75px] rounded-full bg-white flex items-center justify-center'>
                 <img className='w-[50px] h-[50px]' src={image} alt="" />
              </div>

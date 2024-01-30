@@ -3,7 +3,7 @@ import LaptopImage from '../../../assets/Image/Laptop-1.avif'
 
 const FreeTeShikhun = () => {
     return (
-        <div className='bg-[#101828] flex flex-col md:flex-row gap-10 my-10 rounded-md'>
+        <div className='bg-[#101828] flex flex-col md:flex-row md:gap-10 my-10 rounded-md'>
             <div className='w-full md:w-[40%] p-10'>
                 <img className='rounded-md' src={LaptopImage} alt="" />
             </div>
