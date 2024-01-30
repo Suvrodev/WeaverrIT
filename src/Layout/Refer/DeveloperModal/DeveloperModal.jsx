@@ -6,7 +6,7 @@ const DeveloperModal = () => {
 
 
     const handlePhoneCall = () => {
-        window.location.href = 'tel:+8801911473105'; // Replace +1234567890 with the phone number you want to call
+        window.location.href = 'tel:+8801951912997'; // Replace +1234567890 with the phone number you want to call
         // console.log("Ok");
       }
       const handleEmail=()=>{
@@ -20,7 +20,7 @@ const DeveloperModal = () => {
         <div className='text-center'>
             <img className='w-[150px] h-[150px] mx-auto rounded-full' src={developerImage} alt="" />
             <h1 className='text-2xl font-bold'>Suvrodeb Howlader</h1>
-            <p className='italic mb-2'>Computer Science Engineering at North Western University</p>
+            <p className='italic mb-2'>Computer Science Engineering </p> <p>at</p> <p> North Western University</p>
             <h1 className='cursor-pointer text-white hover:text-[#4CBD90]  duration-500' onClick={()=> window.location = 'mailto:suvrodev.cse@yahoo.com'}>Email: <span>suvrodev.cse@gmail.com</span> </h1>
             <h1 className='cursor-pointer text-white hover:text-[#4CBD90] duration-500' onClick={()=>handlePhoneCall()}>Phone: <span>01951912997</span> </h1>
         </div>

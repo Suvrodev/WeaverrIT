@@ -64,7 +64,7 @@ const Footer = () => {
         
 
         {/* Open the modal using document.getElementById('ID').showModal() method */}
-        <h1 className="text-xl font-bold" onClick={()=>document.getElementById('my_modal_1').showModal()}>Contact With Developer</h1>
+        <h1 className="text-xl font-bold cursor-pointer" onClick={()=>document.getElementById('my_modal_1').showModal()}>Contact With Developer</h1>
         <dialog id="my_modal_1" className="modal">
           <div className="modal-box">
             <DeveloperModal></DeveloperModal>

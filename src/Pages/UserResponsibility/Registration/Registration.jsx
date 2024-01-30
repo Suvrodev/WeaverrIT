@@ -50,7 +50,7 @@ const Registration = () => {
             <h1 className="text-3xl font-bold text-center">Registration now!</h1>
 
             <form onSubmit="">
-              <div className='flex flex-col md:flex-row gap-10 w-ful'>
+              <div className='flex flex-col md:flex-row md:gap-10 w-ful'>
                 <div className="form-control w-full md:w-[50%]">
                     <label className="label">
                         <span className="label-text font-bold">First Name</span>
@@ -151,7 +151,7 @@ const Registration = () => {
           </div>
 
           <div className='w-full md:w-[50%] flex items-center justify-center p-0 md:p-20'>
-              <div className='w-full'>
+              <div className='w-full p-10'>
                      {View}    
               </div>
           </div>

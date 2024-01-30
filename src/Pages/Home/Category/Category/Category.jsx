@@ -17,6 +17,7 @@ import { Pagination } from 'swiper/modules';
 import { Navigation } from 'swiper/modules';
 
 import 'swiper/css/navigation';
+import OnMount from '../../../../Layout/Refer/OnMount/OnMount';
 
 
 
@@ -80,6 +81,7 @@ const Category = () => {
 
     return (
        <div className='p-5'>
+            <OnMount></OnMount>
             
 
             <div className='text-center'>
