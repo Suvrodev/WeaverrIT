@@ -1,8 +1,15 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
+import OnMount from '../../../Layout/Refer/OnMount/OnMount';
 
 const TermAndCondition = () => {
     return (
-        <div>
+        <div className='p-5'>
+
+            <Helmet>
+                <title>Home | WeaverrIT</title>
+            </Helmet>
+            <OnMount></OnMount>
             <h1 className='text-4xl font-bold my-4'>Weaverr IT terms of Use</h1>
 
 

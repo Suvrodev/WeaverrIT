@@ -32,7 +32,7 @@ const Login = () => {
    
 
     return (
-        <div className="flex flex-col-reverse md:flex-row ">
+        <div className="flex flex-col md:flex-row ">
           <div className="w-full md:w-[50%]   flex items-center justify-center ">
             <div className="card-body  flex flex-col justify-center  ">
             <h1 className="text-3xl font-bold text-center">Login now!</h1>
@@ -77,7 +77,7 @@ const Login = () => {
             </div>
           </div>
 
-          <div className='w-full md:w-[50%] flex items-center justify-center  p-20'>
+          <div className='w-full md:w-[50%] flex items-center justify-center  p-0 md:p-20'>
               <div className='w-full'>
                      {View}    
               </div>

@@ -39,10 +39,10 @@ const Registration = () => {
         <div className="flex flex-col-reverse md:flex-row ">
           <div className="w-full md:w-[50%]   flex items-center justify-center ">
             <div className="card-body  flex flex-col justify-center  ">
-            <h1 className="text-3xl font-bold text-center">Login now!</h1>
+            <h1 className="text-3xl font-bold text-center">Registration now!</h1>
 
             <form onSubmit="">
-              <div className='flex gap-10 w-ful'>
+              <div className='flex flex-col md:flex-row gap-10 w-ful'>
                 <div className="form-control w-full md:w-[50%]">
                     <label className="label">
                         <span className="label-text font-bold">First Name</span>
@@ -142,7 +142,7 @@ const Registration = () => {
             </div>
           </div>
 
-          <div className='w-full md:w-[50%] flex items-center justify-center  p-20'>
+          <div className='w-full md:w-[50%] flex items-center justify-center p-0 md:p-20'>
               <div className='w-full'>
                      {View}    
               </div>
