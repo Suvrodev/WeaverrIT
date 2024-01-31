@@ -18,6 +18,7 @@ import CourseDetails from "../Pages/CourseDetails/CourseDetails";
 import Login from "../Pages/UserResponsibility/Login/Login";
 import Registration from "../Pages/UserResponsibility/Registration/Registration";
 import TermAndCondition from "../Pages/UserResponsibility/TermsAndCondition/TermAndCondition";
+import FreeClassDB from "../Pages/FreeClassDB/FreeClassDB/FreeClassDB";
 
 
 
@@ -66,6 +67,10 @@ const router = createBrowserRouter([
         {
           path: '/condition',
           element: <TermAndCondition></TermAndCondition>
+        },
+        {
+          path: '/freeclassdb',
+          element: <FreeClassDB></FreeClassDB>
         },
         {
           path: '/test',
