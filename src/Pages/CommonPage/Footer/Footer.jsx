@@ -11,18 +11,6 @@ const Footer = () => {
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  const openModal = () => {
-    setModalIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalIsOpen(false);
-  };
-
-
-    const handleModal=()=>{
-       console.log("Ok");
-    }
 
     return (
        <div className='bg-[var(--footer-color)] mt-10 flex flex-col items-center'>
@@ -65,10 +53,10 @@ const Footer = () => {
 
         {/* Open the modal using document.getElementById('ID').showModal() method */}
         <h1 className="text-xl font-bold cursor-pointer" onClick={()=>document.getElementById('my_modal_1').showModal()}>Contact With Developer</h1>
-        <dialog id="my_modal_1" className="modal">
+        <dialog id="my_modal_1" className="modal  ">
           <div className="modal-box">
             <DeveloperModal></DeveloperModal>
-            <div className="modal-action">
+            <div className="modal-action invi">
               <form method="dialog">
                 <button className="btn">Close</button>
               </form>

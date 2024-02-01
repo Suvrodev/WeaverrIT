@@ -2,9 +2,16 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import OnMount from '../../../Layout/Refer/OnMount/OnMount';
 import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router-dom';
+import Spinner from '../Spinner/Spinner';
 
 const FreeClassDB = () => {
 
+
+    const nativate=useNavigate()
+
+    const [hideModal,setHideModal]=useState(false)
+     
 
     const [allData,setAllData]=useState([])
     const handleCome=()=>{
@@ -18,6 +25,8 @@ const FreeClassDB = () => {
     const handleSubmit=(event)=>{
         event.preventDefault()
         console.log("Submit");
+        document.getElementById('md').showModal()
+
         const Form=event.target;
         
         const name=Form.name.value
@@ -31,7 +40,10 @@ const FreeClassDB = () => {
         const id = Date.now().toString();
 
         const formData={name,mobile,whatsapp,email,facebookid,study,zila,promocode,id}
-        console.log(formData);
+        // console.log(formData);
+
+        // nativate('/')
+        
 
         fetch('https://sheetdb.io/api/v1/lg5u6p6lxaymq', {
             method: 'POST',
@@ -51,10 +63,20 @@ const FreeClassDB = () => {
                 showConfirmButton: false,
                 timer: 1500
               });
+
+              setHideModal(true)
+
         }
     });
 
     }
+
+    // const handleModal=()=>{
+    //    <Spinner></Spinner>
+    // }
+
+   
+
     return (
         <div>
              <Helmet>
@@ -68,7 +90,7 @@ const FreeClassDB = () => {
             <div className="card-body  flex flex-col justify-center  ">
             <h1 className="text-3xl font-bold text-center">Submit yourself for Free Class</h1>
 
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} >
             
                 <div className="form-control w-full">
                     <label className="label">
@@ -181,7 +203,23 @@ const FreeClassDB = () => {
             </div>
 
 
-            <button onClick={handleCome} className='btn btn-success text-white'>Come Data</button>
+            {/* <button onClick={handleCome} className='btn btn-success text-white'>Come Data</button> */}
+            <button className='btn btn-primary' onClick={()=>document.getElementById('md').showModal(2)} >Handle Modal</button>
+
+
+            <dialog id="md" className={`modal ${hideModal?'hidden':''} `}>
+                <div className="modal-box">
+                    <h3 className="font-bold text-lg">Loading</h3>
+                    <div className='flex items-center justify-center '>
+                       <span className="loading loading-infinity loading-lg W-[6/12] mx-auto"></span>
+                    </div>
+                    <div className="modal-action">
+                        <form method="dialog">
+                          <button className="btn">X</button>
+                        </form>
+                </div>
+                </div>
+            </dialog>
           </div>
 
 
