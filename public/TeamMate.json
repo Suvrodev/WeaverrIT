@@ -1,11 +1,5 @@
 [
-    {
-        "id": "1",
-        "found":"1101",
-        "Name":"Sarkar Nayan",
-        "position":"CEO & Founder",
-        "image": "https://i.ibb.co/FbjpXqg/ceo.jpg"
-    },
+   
     {
         "id": "2",
         "found":"1102",
@@ -17,21 +11,28 @@
         "id": "3",
         "found":"1103",
         "Name":"Kanij Fatima Shaila",
-        "position":"Maketers",
-        "image": "https://i.ibb.co/xHwR87v/Kanij-Fatima.png"
+        "position":"Marketers",
+        "image": "https://i.ibb.co/ZmtpvXp/Fatima.png"
     },
     {
         "id": "4",
         "found":"1103",
         "Name":"Maliha Meherin Fariha",
-        "position":"Maketers",
+        "position":"Marketers",
         "image": "https://i.ibb.co/Tk96mf7/Maliha.png"
     },
     {
         "id": "5",
         "found":"1103",
-        "Name":"Shakib Khan",
-        "position":"Maketers",
-        "image": "https://i.ibb.co/FgW6wM5/Shakib.png"
+        "Name":"Kamrul Golder",
+        "position":"Social Media Manager",
+        "image": "https://i.ibb.co/NtwcyHG/Kamrul-Golder.png"
+    },
+    {
+        "id": "6",
+        "found":"1104",
+        "Name":"Sanjana Wusan",
+        "position":"Content Writter",
+        "image": "https://i.ibb.co/Pw1SW20/Wusan.jpg"
     }
 ]

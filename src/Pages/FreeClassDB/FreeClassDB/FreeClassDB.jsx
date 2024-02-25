@@ -65,15 +65,18 @@ const FreeClassDB = () => {
               });
 
               setHideModal(true)
+              window.location.reload();
 
         }
     });
 
     }
 
-    // const handleModal=()=>{
-    //    <Spinner></Spinner>
-    // }
+    const handleJoinMessengerGroup=()=>{
+        console.log("Messenger Group");
+        // window.location.href="https://m.me/j/AbZ0Z1zMvMTDZhkj/"
+        window.open('https://m.me/j/AbZ0Z1zMvMTDZhkj/', '_blank');
+    }
 
    
 
@@ -88,7 +91,11 @@ const FreeClassDB = () => {
 
            
             <div className="card-body  flex flex-col justify-center  ">
-            <h1 className="text-3xl font-bold text-center">Submit yourself for Free Class</h1>
+            <h1 className="text-3xl font-bold text-center text-[#4CBD90]">Submit Your Data for Free Class</h1>
+
+            <div className='flex justify-end'>
+                <button onClick={handleJoinMessengerGroup} className='btn btn-primary'>Join Our Messenger Group</button>
+            </div>
 
             <form onSubmit={handleSubmit} >
             
@@ -99,7 +106,7 @@ const FreeClassDB = () => {
                     <input
                         type="text"
                         placeholder="Name"
-                        className="input input-bordered"
+                        className="input input-bordered bg-[#0B1221] text-white"
                         name="name"
                         required
                     />
@@ -112,7 +119,7 @@ const FreeClassDB = () => {
                   <input
                       type="number"
                       placeholder="Phone Number"
-                      className="input input-bordered"
+                      className="input input-bordered bg-[#0B1221] text-white"
                       name="phone"
                       required
                   />
@@ -125,7 +132,7 @@ const FreeClassDB = () => {
                   <input
                       type="number"
                       placeholder="Whatsapp Number"
-                      className="input input-bordered"
+                      className="input input-bordered bg-[#0B1221] text-white"
                       name="whatsapp"
                       required
                   />
@@ -138,7 +145,7 @@ const FreeClassDB = () => {
                   <input
                       type="email"
                       placeholder="email"
-                      className="input input-bordered"
+                      className="input input-bordered bg-[#0B1221] text-white"
                       name="email"
                       required
                   />
@@ -150,31 +157,31 @@ const FreeClassDB = () => {
                   <input
                       type="text"
                       placeholder="Facebook id"
-                      className="input input-bordered"
+                      className="input input-bordered bg-[#0B1221] text-white"
                       name="fb"
                       required
                   />
                   </div>
               <div className="form-control">
                   <label className="label">
-                      <span className="label-text font-bold">Study</span>
+                      <span className="label-text font-bold">Education Qualification</span>
                   </label>
                   <input
                       type="text"
-                      placeholder="Study"
-                      className="input input-bordered"
+                      placeholder="Education Qualification"
+                      className="input input-bordered bg-[#0B1221] text-white"
                       name="study"
                       required
                   />
                   </div>
               <div className="form-control">
                   <label className="label">
-                      <span className="label-text font-bold">Zila</span>
+                      <span className="label-text font-bold">District </span>
                   </label>
                   <input
                       type="text"
-                      placeholder="Zila"
-                      className="input input-bordered"
+                      placeholder="District"
+                      className="input input-bordered bg-[#0B1221] text-white"
                       name="zila"
                       required
                   />
@@ -184,9 +191,9 @@ const FreeClassDB = () => {
                       <span className="label-text font-bold">Promocode</span>
                   </label>
                   <input
-                      type="number"
+                      type="text"
                       placeholder="Promocode(Optional)"
-                      className="input input-bordered"
+                      className="input input-bordered bg-[#0B1221] text-white"
                       name="promocode"
                       
                   />
@@ -196,7 +203,7 @@ const FreeClassDB = () => {
 
 
                     <div className="form-control mt-6">
-                    <input type="submit" className="btn btn-primary" value="Submit" />
+                    <input type="submit" className="btn btn-primary " value="Submit" />
                   </div>
                  
             </form>
@@ -204,18 +211,18 @@ const FreeClassDB = () => {
 
 
             {/* <button onClick={handleCome} className='btn btn-success text-white'>Come Data</button> */}
-            <button className='btn btn-primary' onClick={()=>document.getElementById('md').showModal(2)} >Handle Modal</button>
+            {/* <button className='btn btn-primary' onClick={()=>document.getElementById('md').showModal(2)} >Handle Modal</button> */}
 
 
-            <dialog id="md" className={`modal ${hideModal?'hidden':''} `}>
-                <div className="modal-box">
+            <dialog id="md" className={`modal  ${hideModal?'hidden':''} `}>
+                <div className="modal-box bg-green-600">
                     <h3 className="font-bold text-lg">Loading</h3>
                     <div className='flex items-center justify-center '>
-                       <span className="loading loading-infinity loading-lg W-[6/12] mx-auto"></span>
+                       <span className="loading loading-infinity loading-lg W-[6/12] mx-auto "></span>
                     </div>
                     <div className="modal-action">
                         <form method="dialog">
-                          <button className="btn">X</button>
+                          <button className="btn bg-red-600 text-white">X</button>
                         </form>
                 </div>
                 </div>

@@ -20,13 +20,17 @@ const Home = () => {
             </Helmet>
             <OnMount></OnMount>
         
-             <Banner></Banner>
-             <Category></Category>
-             <FreeTeShikhun></FreeTeShikhun>
-             <CareerGoal></CareerGoal>
-             <LiveCourse></LiveCourse>
-             <WeaverrBusiness></WeaverrBusiness>
-             <FAQ></FAQ>
+            <div >
+                <Banner></Banner>
+                <Category></Category>
+                <FreeTeShikhun></FreeTeShikhun>
+                <CareerGoal></CareerGoal>
+                <LiveCourse></LiveCourse>
+                <WeaverrBusiness></WeaverrBusiness>
+                <FAQ></FAQ>
+            </div>
+           
+           
              {/* <Footer></Footer> */}
             
            

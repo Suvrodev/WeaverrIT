@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "subcategoryid":"1",
+        "image": "https://i.ibb.co/KygRNhd/Photoshop.webp",
+        "name":"Adobe Photoshop"
+    },
+    {
+        "id": "2",
+        "subcategoryid":"1",
+        "image": "https://i.ibb.co/XLSFNts/Inllustrator.png",
+        "name":"Adobe Illustrator"
+    },
+    {
+        "id": "3",
+        "subcategoryid":"1",
+        "image": "https://i.ibb.co/YDkTJ27/Canva.png",
+        "name":"Canva"
+    },
+    {
+        "id": "4",
+        "subcategoryid":"1",
+        "image": "https://i.ibb.co/XL8DLx1/Power-Point.png",
+        "name":"Microsoft PowerPoint"
+    }
+]

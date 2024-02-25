@@ -85,14 +85,14 @@ const Category = () => {
             
 
             <div className='text-center'>
-                <h1 className='text-4xl font-extrabold my-5'>আমাদের কোর্সসমুহ  </h1>
+                <h1 className='text-4xl font-extrabold my-5 text-white'>আমাদের কোর্সসমুহ  </h1>
 
               {/* Computer View Start */}
-               <div className='my-4 bg-green-600 rounded-md mx-10 md:mx-0 hidden md:block'>
+               <div className='my-4 bg-[#51B8E5] rounded-md mx-10 md:mx-0 hidden md:block'>
                 <Slider {...settings}>
                         {
                             categories.map((category,idx)=><div
-                            className=' rounded-md w-[450px] p-2 md:p-5 '
+                            className=' rounded-md w-[450px] p-2 md:p-5 text-white  '
                             key={idx}
                             onClick={()=>handleCategory(category.id)}
                             >

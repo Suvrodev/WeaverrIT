@@ -19,6 +19,8 @@ import Login from "../Pages/UserResponsibility/Login/Login";
 import Registration from "../Pages/UserResponsibility/Registration/Registration";
 import TermAndCondition from "../Pages/UserResponsibility/TermsAndCondition/TermAndCondition";
 import FreeClassDB from "../Pages/FreeClassDB/FreeClassDB/FreeClassDB";
+import GL from "../Pages/Test/GL/GL";
+import EnrollForm from "../Pages/EnrollForm/EnrollForm";
 
 
 
@@ -57,6 +59,10 @@ const router = createBrowserRouter([
           element:<CourseDetails></CourseDetails>
         },
         {
+          path: '/enroll',
+          element: <EnrollForm></EnrollForm>
+        },
+        {
           path: '/login',
           element: <Login></Login>
         },
@@ -79,6 +85,10 @@ const router = createBrowserRouter([
         {
           path: '/ms',
           element: <MySwipper></MySwipper>
+        },
+        {
+          path:'/gl',
+          element: <GL></GL>
         }
     ]
   },

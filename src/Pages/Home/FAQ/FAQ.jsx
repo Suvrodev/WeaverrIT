@@ -12,21 +12,21 @@ const FAQ = () => {
       const { View } = useLottie(options);
 
     return (
-        <div className='mt-20' data-aos="zoom-in-right">
+        <div className='mt-20' >
         <h1 className='text-center text-4xl w-11/12 md:w-1/2 rounded-xl text-white  mx-auto p-4'>সাধারন প্রশ্ন ও উত্তর</h1>
 
-        <div className='flex flex-col md:flex-row items-center bg-[#0B1221] rounded-xl  '>
+        <div className='flex flex-col md:flex-row items-center bg-[#FFF1E9] rounded-md mb-10 '>
             <div className='clientQsn w-full md:w-1/2 p-2 md:m-10'>
 
-                <div tabIndex={0} className="collapse collapse-plus border border-base-300 bg-black rounded-box">
-                    <div className="collapse-title text-xl font-medium">
+                <div tabIndex={0} className="collapse collapse-plus border border-base-300 rounded-box bg-[#464444]">
+                    <div className="collapse-title text-xl font-medium bg-[#4CBD90 text-white">
                         আমরা কি Online এবং Offline Course দুটোই করতে পারবো?
                     </div>
                         <div className="collapse-content">
                             <p className='text-[#4CBD90]'>হ্যাঁ দুটোই করতে পারবেন</p>
                         </div>
                 </div>
-                <div tabIndex={0} className="collapse collapse-plus border border-base-300  bg-black rounded-box">
+                <div tabIndex={0} className="collapse collapse-plus border border-base-300 bg-[#464444] text-white rounded-box">
                     <div className="collapse-title text-xl font-medium">
                         এখন কি কি কোর্স চালু আছে?
                     </div>
@@ -34,7 +34,7 @@ const FAQ = () => {
                             <p className='text-[#4CBD90]'>এখন শুধু Graphics Design এর কোর্স চালু আছে?</p>
                         </div>
                 </div>
-                <div tabIndex={0} className="collapse collapse-plus border border-base-300  bg-black rounded-box">
+                <div tabIndex={0} className="collapse collapse-plus border border-base-300 bg-[#464444] text-white rounded-box">
                     <div className="collapse-title text-xl font-medium">
                        কোর্স শেষে আমরা কি কি ধরনের সুবিধা পাবো?
                     </div>
@@ -42,7 +42,7 @@ const FAQ = () => {
                             <p className='text-[#4CBD90]'>Fiver, Upwork, Freeluncher এবং Linkdin এর মাধ্যমে আপনাদের কাজ পাওয়ার সম্পস্ত সিস্টেম দেখিয়ে দেওয়া হবে</p>
                         </div>
                 </div>
-                <div tabIndex={0} className="collapse collapse-plus border border-base-300  bg-black rounded-box">
+                <div tabIndex={0} className="collapse collapse-plus border border-base-300 bg-[#464444] text-white rounded-box">
                     <div className="collapse-title text-xl font-medium">
                         আপনাদের কি সাপোর্ট সেশন থাকবে
                     </div>
@@ -50,7 +50,7 @@ const FAQ = () => {
                             <p className='text-[#4CBD90]'>হ্যাঁ, অবশ্যই থাকবে। আপনাদের সমস্ত প্রোবলেম Solve করে দেওয়া হবে</p>
                         </div>
                 </div>
-                <div tabIndex={0} className="collapse collapse-plus border border-base-300  bg-black rounded-box">
+                <div tabIndex={0} className="collapse collapse-plus border border-base-300 bg-[#464444] text-white rounded-box">
                     <div className="collapse-title text-xl font-medium">
                         আপনাদের কন্টাক্ট নাম্বার?
                     </div>

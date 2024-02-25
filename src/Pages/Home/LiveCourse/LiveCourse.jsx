@@ -15,7 +15,7 @@ const LiveCourse = () => {
     
     
     return (
-        <div className='text-center my-4'>
+        <div className='text-center my-4 text-white'>
             <h1 className='text-4xl font-bold'>কি কি পাচ্ছেন লাইভ কোর্সে</h1>
             <p className='my-2'>দেখে নিন কি কি পাচ্ছেন ওয়েভার আইটির লাইভ কোর্সে জয়েন করলে</p>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-10 my-4'>

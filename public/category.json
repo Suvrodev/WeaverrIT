@@ -2,26 +2,49 @@
     {
         "id": "1",
         "category":"Graphics & MultipleMedia",
-        "image": "https://i.ibb.co/tKcgkK3/Graphics-And-Multimedia.webp"
+        "image": "https://i.ibb.co/tKcgkK3/Graphics-And-Multimedia.webp",
+        "courseno":"4"
     },
     {
         "id": "2",
         "category":"Web & App Development",
-        "image": "https://i.ibb.co/0ycPjgb/Web-and-App-Development.webp"
+        "image": "https://i.ibb.co/0ycPjgb/Web-and-App-Development.webp",
+        "courseno":"5"
     },
     {
         "id": "3",
         "category":"Marketing & Business",
-        "image": "https://i.ibb.co/t3HYNZs/Marketing-and-Business.png"
+        "image": "https://i.ibb.co/t3HYNZs/Marketing-and-Business.png",
+        "courseno":"2"
     },
     {
         "id": "4",
         "category":"Computer Programming",
-        "image": "https://i.ibb.co/d0JY6Db/Computer-Programming.png"
+        "image": "https://i.ibb.co/d0JY6Db/Computer-Programming.png",
+        "courseno":"4"
     },
     {
         "id": "5",
         "category":"Basic Computer",
-        "image": "https://i.ibb.co/CMjCHWD/Basic-Computer.png"
+        "image": "https://i.ibb.co/CMjCHWD/Basic-Computer.png",
+        "courseno":"2"
+    },
+    {
+        "id": "6",
+        "category":"English Language",
+        "image": "https://i.ibb.co/CMjCHWD/Basic-Computer.png",
+        "courseno":"0"
+    },
+    {
+        "id": "7",
+        "category":"Cyber Security",
+        "image": "https://i.ibb.co/CMjCHWD/Basic-Computer.png",
+        "courseno":"0"
+    },
+    {
+        "id": "8",
+        "category":"3D Animation",
+        "image": "https://i.ibb.co/CMjCHWD/Basic-Computer.png",
+        "courseno":"0"
     }
 ]
