@@ -81,10 +81,10 @@ const Category = () => {
         {/* Computer View Start */}
         <div className="my-4 bg-[#51B8E5] rounded-md mx-10 md:mx-0 hidden md:block">
           <Slider {...settings}>
-            {categories.map((category, idx) => (
+            {categories.map((category) => (
               <div
-                className=" rounded-md w-[450px] p-2 md:p-5 text-white  "
-                key={idx}
+                className=" rounded-md w-[450px] p-2 md:p-5 text-white"
+                key={`swiperDesktop-${category.id}`}
                 onClick={() => handleCategory(category.id)}
               >
                 {category.category}
@@ -114,20 +114,20 @@ const Category = () => {
               },
             }}
             modules={[Navigation]}
-            className="mySwiper  w-10/12 mx-20"
+            className="mySwiper w-10/12 mx-20"
           >
             {categories.map((category, idx) => (
               <div
-                key={`swiper-${idx}`}
+                key={idx}
                 onClick={() => handleCategory(category.id)}
                 className="m-10 pd"
               >
                 <SwiperSlide
-                  className="w-6/12 mx-auto my-2 rounded-md text-white font-bold text-center "
+                  key={idx}
+                  className="w-6/12 mx-auto my-2 rounded-md text-white font-bold text-center"
                   onClick={() => handleCategory(category.id)}
                 >
-                  {" "}
-                  {category.category}{" "}
+                  {category.category}
                 </SwiperSlide>
               </div>
             ))}
