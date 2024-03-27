@@ -11,7 +11,7 @@ const Review = () => {
   }, []);
 
   return (
-    <div>
+    <div className="mb-4">
       <h1 className="text-4xl text-center">
         দেখে নিন কি বলছেন ওয়েভার আইটি এর গ্র্যাজুয়েটরা
       </h1>
