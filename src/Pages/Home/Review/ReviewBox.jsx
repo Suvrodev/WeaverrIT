@@ -3,7 +3,7 @@ import React from "react";
 const ReviewBox = ({ c }) => {
   const { Course, name, image, comment } = c;
   return (
-    <div className="bg-[#FFFFFF] text-black p-5 rounded-md h-[280px] relative m-5 md:m-0">
+    <div className="bg-[#FFFFFF] text-black p-5 rounded-md h-[300px] md:h-[280px] relative m-5 md:m-0">
       <p>{comment}</p>
       <div className="flex flex-col flex-grow-0  absolute bottom-[15px] w-full  ">
         <p className="h-[1px] w-full bg-black my-5"></p>

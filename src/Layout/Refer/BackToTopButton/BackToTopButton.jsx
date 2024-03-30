@@ -24,7 +24,7 @@ const BackToTopButton = () => {
     <div>
       {backToTopButton && (
         <button
-          className="btn bg-[#0A7CFF] fixed bottom-[30px] left-[50px]"
+          className="btn bg-[#0A7CFF] fixed bottom-[30px] left-[50px] hover:bg-[#0A7CFF] border-0"
           onClick={scrollUp}
         >
           {" "}
