@@ -22,6 +22,16 @@ const Footer = () => {
     window.open(whatsappUrl, "_blank");
   };
 
+  const phoneNumber = "+880 1911473105";
+  const handlePhoneCall = () => {
+    window.location.href = `tel:${phoneNumber}`;
+  };
+
+  const emailAddress = "weaverrit@gmail.com";
+  const handleEmail = () => {
+    window.location.href = `mailto:${emailAddress}`;
+  };
+
   //#51B8E5
   //4A5466
   return (
@@ -68,16 +78,27 @@ const Footer = () => {
         </aside>
         <nav>
           <h6 className="footer-title">Quick Link</h6>
-          <a className="link link-hover">Service</a>
+
+          <Link to="/service" className="link link-hover">
+            Service
+          </Link>
+
           <a className="link link-hover">Free Course</a>
           <a className="link link-hover">We do?</a>
           <a className="link link-hover">Blog</a>
         </nav>
         <nav>
           <h6 className="footer-title">Support</h6>
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">+880 1911473105</a>
-          <a className="link link-hover">weaverrit@gmail.com</a>
+          <Link to="/about" className="link link-hover">
+            About us
+          </Link>
+
+          <a className="link link-hover" onClick={handlePhoneCall}>
+            +880 1911473105
+          </a>
+          <a className="link link-hover" onClick={handleEmail}>
+            weaverrit@gmail.com
+          </a>
 
           {/* <a className="link link-hover">Contact</a>
               <a className="link link-hover">Jobs</a>
@@ -85,7 +106,10 @@ const Footer = () => {
         </nav>
         <nav>
           <h6 className="footer-title">Company</h6>
-          <a className="link link-hover">Terms of use</a>
+
+          <Link to="/condition" className="link link-hover">
+            Terms of use
+          </Link>
           <a className="link link-hover">Privacy policy</a>
           {/* <a className="link link-hover">Cookie policy</a> */}
         </nav>

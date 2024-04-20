@@ -32,11 +32,14 @@ const About = () => {
                     <p>Develop your skill with the best industry experts through live learning, task-based curriculum, and track your progress through our progress tracking dashboard. Get all the resources easily and get access to one of the richest talentpools.</p>
                     <p>Trade licence number- xxxxx</p> */}
           <p>
-            At Weaverr IT, our primary aim is to empower the community through
-            exceptional learning standards. We are dedicated to the ongoing
-            enhancement of our leaders, who are instrumental in shaping a
-            brighter future. Our commitment extends to sharing knowledge to
-            foster individual success and contribute positively to society.
+            Weaverr IT is a live learning platform that provides skill
+            development opportunities for individuals looking to enhance their
+            professional growth. Our platform provides diverse courses and
+            programs to help university students, employees, job seekers, and
+            freelancers learn new skills and stay competitive in today's
+            employment market. Develop your abilities with expert instructors
+            through live learning and a task-based curriculum. We are committed
+            to sharing our knowledge to benefit individuals and society.
           </p>
         </div>
       </div>
